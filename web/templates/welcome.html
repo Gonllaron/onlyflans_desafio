@@ -1,8 +1,15 @@
 {% extends 'base.html' %}
 
 {% block contenido %}
-<h1>Bienvenido cliente</h1>
-<h3>Flanes privados</h3>
+<div class="card">
+  <div class="card-header">
+    Bienvenido {{ user.get_username }}
+  </div>
+  <div class="card-body">
+    <p class="card-text">Tenemos una lista de productos exclusivos para ti. ¿Quieres conocer más?</p>
+    <a href="{% url 'contacto' %}" class="btn btn-primary">Contáctanos</a>
+  </div>
+</div>
 <div class="row">
     {% for flan in flanes_privados %}
     <div class="col">
