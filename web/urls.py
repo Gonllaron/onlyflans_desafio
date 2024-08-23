@@ -6,5 +6,5 @@ urlpatterns = [
     path ('acerca/', views.about, name='acerca'),
     path ('bienvenido/', views.welcome, name='bienvenido'),
     path ('contacto/', views.contacto, name='contacto'),
-    path ('exito/', views.exito, name='exito'),
+    path ('exito/', views.success, name='exito'),
 ]
